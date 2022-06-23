@@ -93,3 +93,68 @@ button {
 #new-task-submit:active {
   opacity: 0.6;
 }
+
+main {
+  margin-top: 40px;
+}
+
+.task-list {
+  padding: 16px 0 0 0;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-family: "Bebas Neue", cursive;
+  color: var(--black);
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  border-left: 5px solid var(--main-color);
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.task .content .text {
+  color: var(--dark-gray);
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+  color: var(--main-color);
+}
+
+.task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.task .actions button:hover {
+  opacity: 0.8;
+}
+
+.task .actions button:active {
+  opacity: 0.6;
+}
+
+.task .actions .edit {
+  color: var(--blue);
+}
+
+.task .actions .delete {
+  color: crimson;
+}
