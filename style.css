@@ -158,3 +158,22 @@ main {
 .task .actions .delete {
   color: crimson;
 }
+
+.footer {
+  position: fixed;
+  color: var(--main-color-dark);
+  text-align: center;
+  bottom: 0px;
+  background-color: var(--main-color);
+  width: 100vh;
+  padding: 20px 0 20px 0;
+}
+
+.footer a {
+  color: var(--main-color-dark);
+  text-decoration: underline 1px;
+}
+
+.footer a:hover {
+  text-decoration: underline 3px;
+}
