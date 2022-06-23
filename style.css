@@ -21,3 +21,75 @@ body {
   align-items: center;
   background-color: var(--main-color);
 }
+
+.wrap {
+  margin: 200px 0;
+  background-color: var(--white);
+  width: 100%;
+  max-width: 600px;
+  padding: 80px 50px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(33, 61, 42, 0.2);
+}
+
+header {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--black);
+  margin-bottom: 30px;
+  font-family: "Bebas Neue", cursive;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#new-task-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#new-task-input {
+  padding: 5px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid var(--main-color);
+  font-size: 16px;
+}
+
+#new-task-input::placeholder {
+  color: var(--gray);
+}
+
+#new-task-submit {
+  padding: 15px 0;
+  width: 140px;
+  background-color: var(--main-color);
+  border: none;
+  outline: none;
+  color: var(--dark-gray);
+  border-radius: 5px;
+}
+
+#new-task-submit:hover {
+  opacity: 0.8;
+}
+
+#new-task-submit:active {
+  opacity: 0.6;
+}
