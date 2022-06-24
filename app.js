@@ -53,5 +53,9 @@ window.addEventListener("load", () => {
         taskInputEl.setAttribute("readonly", "readonly");
       }
     });
+
+    taskDeleteEl.addEventListener("click", (e) => {
+      listEl.removeChild(taskEl);
+    });
   });
 });
