@@ -42,5 +42,16 @@ window.addEventListener("load", () => {
     listEl.appendChild(taskEl);
 
     input.value = "";
+
+    taskEditEl.addEventListener("click", (e) => {
+      if (taskEditEl.innerText.toLowerCase() == "edit") {
+        taskEditEl.innerText = "Save";
+        taskInputEl.removeAttribute("readonly");
+        taskInputEl.focus();
+      } else {
+        taskEditEl.innerText = "Edit";
+        taskInputEl.setAttribute("readonly", "readonly");
+      }
+    });
   });
 });
