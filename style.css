@@ -154,7 +154,7 @@ main {
 }
 
 .task .actions .edit {
-  color: var(--blue);
+  color: var(--dark-gray);
 }
 
 .task .actions .delete {
@@ -189,6 +189,14 @@ main {
   #new-task-input {
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  .task .actions .edit {
+    font-size: calc(12 / 16 * 1rem);
+  }
+
+  .task .actions .delete {
+    font-size: calc(12 / 16 * 1rem);
   }
 
   .footer {
